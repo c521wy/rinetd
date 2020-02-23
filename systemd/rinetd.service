@@ -1,0 +1,10 @@
+[Unit]
+Description=rinetd
+
+[Service]
+Type=forking
+ExecStart=/usr/sbin/rinetd
+
+[Install]
+WantedBy=multi-user.target
+
