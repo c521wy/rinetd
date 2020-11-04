@@ -3,6 +3,8 @@ Description=rinetd
 
 [Service]
 Type=forking
+Restart=on-failure
+RestartSec=5s
 ExecStart=/usr/sbin/rinetd
 
 [Install]
